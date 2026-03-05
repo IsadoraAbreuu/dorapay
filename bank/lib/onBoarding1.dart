@@ -10,8 +10,8 @@ class Onboarding1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-        body: Center(
-          child: Column(
+        body: ListView(
+          children: [ Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 100),
@@ -50,11 +50,14 @@ class Onboarding1 extends StatelessWidget {
             }, child: Text("Próximo")),
 
               TextButton(onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Cadastro()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
             }, child: Text("Pular"))
             ],
           ),
+          ]
         ),
+
       );
+      
   }
 }

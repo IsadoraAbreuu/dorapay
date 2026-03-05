@@ -9,8 +9,8 @@ class Onboarding2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-        body: Center(
-          child: Column(
+        body: ListView(
+          children: [ Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 100),
@@ -53,6 +53,7 @@ class Onboarding2 extends StatelessWidget {
             }, child: Text("Pular"))
             ],
           ),
+          ]
         ),
       );
   }

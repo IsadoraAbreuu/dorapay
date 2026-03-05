@@ -8,8 +8,8 @@ class Onboarding3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-        body: Center(
-          child: Column(
+        body: ListView(
+          children: [ Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 100),
@@ -49,6 +49,7 @@ class Onboarding3 extends StatelessWidget {
 
             ],
           ),
+          ]
         ),
       );
   }

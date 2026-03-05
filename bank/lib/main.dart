@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bank/onBoarding1.dart';
+import 'dart:io';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +25,8 @@ class Tela1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Column(
+      body: ListView(
+        children: [ Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
 
@@ -52,6 +53,7 @@ class Tela1 extends StatelessWidget {
            }, child: Text("Entrar"))
           ],
         ),
+        ]
       ),
     );
   }
