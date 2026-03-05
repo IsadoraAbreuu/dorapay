@@ -29,7 +29,7 @@ class Homepage extends StatelessWidget {
 
           const SizedBox(height: 30),
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(30),
             decoration: BoxDecoration(
               color: const Color(0xFF7517B8),
               borderRadius: BorderRadius.circular(20),
@@ -44,7 +44,7 @@ class Homepage extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 30),
+          const SizedBox(height: 40),
           const Text("Ações rápidas", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
 
           const SizedBox(height: 20),
@@ -98,11 +98,15 @@ class Homepage extends StatelessWidget {
             ],
           ),
 
-          const SizedBox(height: 30),
+          const SizedBox(height: 40),
           const Text("Meus Cartões", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          const Text("Cartão débito de Isa", style: TextStyle(fontSize: 18)),
 
           const SizedBox(height: 15),
-          Image.asset("../assets/cartao.png", width: 300)
+          Image.asset("../assets/cartao.png", width: 500),
+
+          const SizedBox(height: 40),
+          const Text("Transferências", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
         ],
       ),
 
